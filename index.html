@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ゆるサル | FC メヒカリ × ヒーローズ勿来</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://mcp.figma.com/mcp/html-to-design/capture.js"
+      async
+    ></script>
+  </head>
+  <body>
+    <!-- ナビゲーション -->
+    <header class="nav">
+      <div class="container">
+        <nav class="nav__inner">
+          <div class="nav__logo"><span>ヒーローズ勿来</span></div>
+          <a
+            href="#"
+            class="nav__social"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect
+                x="2.5"
+                y="2.5"
+                width="19"
+                height="19"
+                rx="5"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" />
+            </svg>
+          </a>
+          <a
+            href="https://tol-app.jp/s/heroes-nakoso/yx093u"
+            class="btn-primary"
+            style="font-size: 14px; padding: 12px 24px"
+            target="_blank"
+            >今すぐ申し込む</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- ヒーロー -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">ゆるサル</h1>
+        <p class="hero__sub">
+          初心者大歓迎。強いシュートなし。<br />
+          朝の新しい習慣にフットサル！
+        </p>
+
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">開催日</div>
+            <div class="hero__meta-value">毎週日曜日<br />8:00〜10:00</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">会場</div>
+            <div class="hero__meta-value">ヒーローズ勿来</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">参加費</div>
+            <div class="hero__meta-value">¥2,000</div>
+            <a
+              href="https://sites.google.com/view/heros28azule/%E5%80%8B%E4%BA%BA%E5%8F%82%E5%8A%A0%E5%9E%8B%E5%9B%9E%E6%95%B0%E5%88%B8?authuser=0"
+              class="btn-primary btn-primary--dark-green"
+              style="font-size: 18px; padding: 18px 48px"
+              target="_blank"
+              rel="noopener noreferrer"
+              >オトクな<br />回数券</a
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/hero.jpg"
+        alt="ゆるサルのプレー風景"
+        class="hero__image"
+      />
+    </section>
+
+    <!-- イベント概要 -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Event Info</p>
+          <h2 class="section__title">イベント概要</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="info-card">
+            <div class="card__label">日時</div>
+            <div class="card__title">毎週日曜日<br />8:00〜10:00</div>
+            <div class="card__body">
+              集合：開始5分前までにはお集まりください<br />プログラム内容：ルール説明・チーム分け後、ひたすらゲームをします
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card__label">会場</div>
+            <div class="card__title">ヒーローズ勿来</div>
+            <div class="card__body">
+              〒979-0141<br />
+              いわき市勿来町窪田十條3-2<br />
+              マルトＳＣ勿来十条　内<br />
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card__label">主催 / 参加費</div>
+            <div class="card__title">ヒーローズ勿来</div>
+            <div class="card__body">
+              運営 / ふくしま健康デザイン<br />
+              参加費：¥2,000<br />
+              最小催行人数：スタッフ合わせて10名<br /><br />
+              ※中止の場合は前日までにご連絡
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3つのポイント -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Features</p>
+          <h2 class="section__title">ゆるサル 3つのポイント</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__icon">⚽</div>
+            <div class="card__label">Point 01</div>
+            <div class="card__title">
+              ビギナールール<br />初心者・未経験者大歓迎
+            </div>
+            <div class="card__body">
+              強いシュート禁止など、けがを防ぐビギナールール採用。サッカー経験ゼロでも安心して参加できます。
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon">🏃</div>
+            <div class="card__label">Point 02</div>
+            <div class="card__title">朝の新習慣</div>
+            <div class="card__body">
+              朝一番に蹴ることで1日が長く使え、夜の予定や家族サービスとも両立できます。
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon">🎉</div>
+            <div class="card__label">Point 03</div>
+            <div class="card__title">気軽に参加できる</div>
+            <div class="card__body">
+              ビブス・ボールなど備品はすべて主催者が用意します。動きやすい服装とやる気だけ持ってきてください！
+              <br /><span style="color: #3333ea">※スパイクは禁止です</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 参加にあたってのご注意 -->
+    <section class="section section--alt" id="notes">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Notes</p>
+          <h2 class="section__title">参加にあたってのご注意</h2>
+          <p style="margin-top: 12px; font-size: 15px; color: var(--mute)">
+            <span style="color: #e53333"
+              >必ずお読みください。参加申込をもって、以下の内容にご同意いただいたものとします。</span
+            >
+          </p>
+        </div>
+
+        <div class="notes-grid">
+          <div class="note-card">
+            <div class="note-card__title">個人情報の取り扱いについて</div>
+            <div class="note-card__body">
+              イベントに際し、氏名・メールアドレス等のアカウント情報を取得します。取得した個人情報は個人情報保護方針に従い適正に管理し、イベント運営の目的以外には利用いたしません。本イベント参加者の写真・動画をWEBメディアやSNS等にて無償で使用させていただく場合があります（使用を希望されない場合は事前にお知らせください）。
+            </div>
+          </div>
+
+          <div class="note-card">
+            <div class="note-card__title">ビギナールールについて</div>
+            <div class="note-card__body">
+              ・男性はトゥキック＆インステップキックでの強いシュートは禁止です。<br />
+              ・女性やビギナーの方が怖がるよな強い接触は禁止です。<br />
+              ・サッカー経験者の方はビギナーの方へのディフェンスはゆるくお願いします。<br />
+              ・ＧＫはペナルティエリア内のみでプレイをお願いします。<br />
+              ・暴言・暴力はお止めください<br />
+              ・過度なコーチングはご遠慮ください<br />
+              ・参加者が委縮するような言動はおやめください<br />
+              ・コート内での飲食（飴・ガム含む）は一切禁止です<br />
+              <span style="color: #e53333; font-size: 16px"
+                >悪質なラフプレーや暴言等については、以降の参加をお断りする場合があります。</span
+              >
+            </div>
+          </div>
+
+          <div class="note-card">
+            <div class="note-card__title">当日の負傷について</div>
+            <div class="note-card__body">
+              当日の負傷については応急処置のみを行います。継続的な治療が必要な場合は各自のご負担となります。<br />
+
+              <span style="color: #e53333; font-size: 16px"
+                >スポーツ傷害保険は各個人でのご加入をお勧めします</span
+              >
+            </div>
+          </div>
+
+          <div class="note-card">
+            <div class="note-card__title">キャンセルポリシーについて</div>
+            <div class="note-card__body">
+              ・キャンセルは前日20:00までにお願いいたします<br />
+              ・予約サイトからは24時間前まで手続き可能です<br />
+              ・当日キャンセルは有料となります（必ずご連絡ください）<br />
+
+              <span style="color: #e53333; font-size: 16px"
+                >最小催行人数（10名）が集まらない場合や悪天候により中止となる場合は、前日までに登録の連絡先へご連絡します。</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAバンド -->
+    <section class="cta-band" id="entry">
+      <div class="container">
+        <h2 class="cta-band__title">さあ、コートへ<br />飛び出そう。</h2>
+        <p class="cta-band__sub">
+          初めての方も、久しぶりの方も。ゆるく、楽しく、全力で。
+        </p>
+        <div class="cta-band__price">¥2,000</div>
+        <p class="cta-band__price-note">
+          （最小催行人数 スタッフ合わせて10名）
+        </p>
+        <a
+          href="https://sites.google.com/view/heros28azule/%E5%80%8B%E4%BA%BA%E5%8F%82%E5%8A%A0%E5%9E%8B%E5%9B%9E%E6%95%B0%E5%88%B8?authuser=0"
+          class="btn-primary btn-primary--dark-green"
+          style="font-size: 18px; padding: 18px 48px"
+          target="_blank"
+          rel="noopener noreferrer"
+          >お得な回数券について →</a
+        >
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div>
+            <div class="footer__logo"><span>ヒーローズ勿来</span></div>
+          </div>
+          <div>
+            <div class="footer__col-title">お問い合わせ</div>
+            <div class="footer__col-body">
+              メール：<a
+                href="mailto:walkingfootball@fc-mehikari.org"
+                style="text-decoration: underline"
+                >walkingfootball@fc-mehikari.org</a
+              ><br />
+
+              <a
+                href="https://www.instagram.com/heroes_nakoso_events/"
+                class="footer__social"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect
+                    x="2.5"
+                    y="2.5"
+                    width="19"
+                    height="19"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copy">
+          &copy; 2026 一般社団法人ふくしま健康デザイン. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- フローティング申し込みボタン -->
+    <div class="float-cta" id="floatCta">
+      <a
+        href="https://tol-app.jp/s/heroes-nakoso/yx093u"
+        class="btn-primary float-cta__btn"
+        >参加申し込み →</a
+      >
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
