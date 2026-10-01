@@ -422,3 +422,189 @@ a { color: inherit; text-decoration: none; }
   .section { padding: 48px 0; }
   .cta-band { padding: 48px 0; }
 }
+
+
+/* ── スマホを主導線にした最適化 ── */
+@media (max-width: 600px) {
+  :root {
+    --spacing-section: 32px;
+    --spacing-xxl: 24px;
+  }
+
+  .container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .nav__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    height: 60px;
+    column-gap: 12px;
+  }
+
+  .nav__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    justify-self: end;
+  }
+
+  .nav__logo {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .nav .btn-primary {
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 10px 16px !important;
+    border-radius: 18px;
+  }
+
+  .hero {
+    padding: 42px 0 0;
+  }
+
+  .hero__title {
+    font-size: clamp(58px, 19vw, 72px);
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .hero__sub {
+    font-size: 17px;
+    margin-bottom: 28px;
+  }
+
+  .hero__cta .btn-primary {
+    width: min(100%, 320px);
+    min-height: 56px;
+    padding: 16px 24px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .hero__image {
+    height: max(220px, 58vw);
+    margin-top: 32px;
+    object-fit: cover;
+  }
+
+  .section,
+  .cta-band {
+    padding: 42px 0;
+  }
+
+  .section__header {
+    margin-bottom: 28px;
+  }
+
+  .section__title {
+    font-size: 32px;
+  }
+
+  #notes .section__header {
+    text-align: center;
+  }
+
+  .card,
+  .info-card {
+    padding: 24px 20px;
+  }
+
+  .card__body,
+  .note-card__body {
+    font-size: 15px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .note-card {
+    padding: 22px 18px;
+  }
+
+  .cta-band__title {
+    font-size: 46px;
+  }
+
+  .cta-band__sub {
+    margin-bottom: 28px;
+  }
+
+  .float-cta {
+    right: 16px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    left: 16px;
+  }
+
+  .float-cta__btn {
+    min-height: 56px;
+    padding: 16px 20px;
+  }
+
+  .footer {
+    padding-bottom: calc(112px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 380px) {
+  .nav__inner {
+    gap: 8px;
+  }
+
+  .nav .btn-primary {
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+  }
+}
+
+
+/* ── イベント概要 ── */
+.card-grid--event {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.event-detail + .event-detail {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--hairline);
+}
+
+.card-grid--event .card__body p + p {
+  margin-top: var(--spacing-md);
+}
+
+.event-notice {
+  margin-top: var(--spacing-xl) !important;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--hairline);
+}
+
+@media (max-width: 768px) {
+  .card-grid--event {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.event-benefit {
+  margin-bottom: var(--spacing-xl);
+  padding: 18px 20px;
+  border-left: 5px solid var(--hero-green);
+  background: #edfbed;
+  color: #1a5c1a;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .event-benefit {
+    padding: 16px 18px;
+    font-size: 20px;
+  }
+}
